@@ -20,3 +20,17 @@ A single process (multi-threaded) handles everything that happens in the user vi
 6) Send cards to the server process for forwarding it to the next user
 
 7) Receives and processes the updates and goes to step 1.
+
+Cards can be sent/received in a blob which is just an array of cards one after the other.
+
+Card structure:
+{
+version number;
+card name;
+card ID;
+associated image;
+}
+
+player state : 
+array of unselected cards (the ones in hand)
+// TODO : Add other state vars here
